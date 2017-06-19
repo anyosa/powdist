@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: powdist\nType: Package\nTitle: vvv\nVersion: 0.1.0\nAuthor: Susan A. C. Anyosa\nMaintainer: Susan A. C. Anyosa <susanch@usp.br>\nImports: VGAM\nDescription: More about what it does (maybe more than one line)\n    Use four spaces when indenting paragraphs within the Description.\nLicense: What license is it under?\nEncoding: UTF-8\nRoxygenNote: 6.0.1\n",
+    "created" : 1497885398010.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3763990471",
+    "id" : "F77A2BD8",
+    "lastKnownWriteTime" : 1497893457,
+    "last_content_update" : 1497893457990,
+    "path" : "~/powdist/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
