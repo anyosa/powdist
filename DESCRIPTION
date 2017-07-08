@@ -1,11 +1,12 @@
 Package: powdist
 Type: Package
 Title: Power and reversal power distributions
-Version: 0.1.0
+Version: 0.1.1
 Author: Susan A. C. Anyosa
 Maintainer: Susan A. C. Anyosa <susanch@usp.br>
+URL: https://github.com/susanca/powdist
 Imports: VGAM
 Description: Density, distribution function, quantile function and random generation for the family of power and reversal power distributions.
-License: What license is it under?
+License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 6.0.1
