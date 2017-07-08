@@ -1,12 +1,12 @@
-#' Density, distribution function, quantile function and random generation for the power logistic distribution with parameters mu and sigma.
+#' Power logistic distribution
 #'
-#' @param x vector of quantiles.
-#' @param q vector of quantiles.
+#' Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
+#' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
 #' @param n number of observations. If length(n) > 1, the length is taken to be the number required.
 #' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
-#' @references Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) The New S Language. Wadsworth & Brooks/Cole.
+#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' dpl(1, 1, 3, 4)
 dpl <- function(x, lambda, mu = 0, sigma = 1){
@@ -14,16 +14,49 @@ dpl <- function(x, lambda, mu = 0, sigma = 1){
   return(d)
 }
 
+#' Power logistic distribution
+#'
+#' Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
+#' @param x,q vector of quantiles.
+#' @param p vector of probabilities.
+#' @param n number of observations. If length(n) > 1, the length is taken to be the number required.
+#' @param lambda shape parameter.
+#' @param mu,sigma location and scale parameters.
+#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
+#' @examples
+#' dpl(1, 1, 3, 4)
 ppl <- function(q, lambda, mu = 0, sigma = 1){
   p = plogis(q, mu, sigma)
   return(p**lambda)
 }
 
+#' Power logistic distribution
+#'
+#' Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
+#' @param x,q vector of quantiles.
+#' @param p vector of probabilities.
+#' @param n number of observations. If length(n) > 1, the length is taken to be the number required.
+#' @param lambda shape parameter.
+#' @param mu,sigma location and scale parameters.
+#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
+#' @examples
+#' dpl(1, 1, 3, 4)
 qpl <- function(p, lambda,  mu = 0, sigma = 1){
   q = qlogis(p**(1/lambda))* sigma + mu
   return(q)
 }
 
+#' Power logistic distribution
+#'
+#' Density, distribution function, quantile function and random generation for the.
+#' @param x,q vector of quantiles.
+#' @param p vector of probabilities.
+#' @param n number of observations. If length(n) > 1, the length is taken to be the number required.
+#' @param lambda shape parameter.
+#' @param mu,sigma location and scale parameters.
+#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
+#' @examples
+#' rpl(5, 2, 3, 4)
 rpl = function(n, lambda, mu= 0, sigma = 1){
   n = runif(n)
   x = qpl(n, lambda, mu, sigma)
