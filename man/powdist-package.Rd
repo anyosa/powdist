@@ -6,10 +6,15 @@
 \alias{powdist}
 \title{Power and reversal power distributions}
 \description{
-The \pkg{powdist} package enables to compute the density,
-distribution function, quantile function and random generation
-for the family of power and reversal power distributions.
+The \pkg{powdist} package enables to compute the probability density function,
+cumulative distribution function, quantile function and generate random numbers for
+the following distributions: power logistic, reversal power logistic, power normal,
+reversal power normal, power cauchy, reversal power cauchy, power gumbel of maximum value,
+reversal power gumbel of maximum value, power gumbel of minimum value and reversal
+power gumbel of maximum value.
 }
 \author{
-Susan A. C. Anyosa <susanch@usp.br>
+Susan A. C. Anyosa <susanaliciach@gmail.com>
+
+Jorge L. Bazán <jlbazan@icmc.usp.br>
 }
