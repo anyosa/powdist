@@ -7,18 +7,14 @@
 dpl(x, lambda, mu = 0, sigma = 1)
 }
 \arguments{
-\item{x, q}{vector of quantiles.}
+\item{x}{vector of quantiles.}
 
 \item{lambda}{shape parameter.}
 
 \item{mu, sigma}{location and scale parameters.}
-
-\item{p}{vector of probabilities.}
-
-\item{n}{number of observations. If length(n) > 1, the length is taken to be the number required.}
 }
 \description{
-Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
+Density function for the power logistic distribution with parameters mu, sigma and lambda.
 }
 \examples{
 dpl(1, 1, 3, 4)
