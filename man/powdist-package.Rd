@@ -6,10 +6,10 @@
 \alias{powdist}
 \title{Power and reversal power distributions}
 \description{
-The \pkg{powdist} package enables to compute the probability density function,
-cumulative distribution function, quantile function and generate random numbers for
-the following distributions: power logistic, reversal power logistic, power normal,
-reversal power normal, power cauchy, reversal power cauchy, power gumbel of maximum value,
-reversal power gumbel of maximum value, power gumbel of minimum value and reversal
-power gumbel of maximum value.
+The \pkg{rstanarm} package is an appendage to the \pkg{rstan} package that
+enables many of the most common applied regression models to be estimated
+using Markov Chain Monte Carlo, variational approximations to the posterior
+distribution, or optimization. The \pkg{rstanarm} package allows these models
+to be specified using the customary R modeling syntax (e.g., like that of
+\code{\link[stats]{glm}} with a \code{formula} and a \code{data.frame}).
 }
