@@ -14,7 +14,7 @@ reversal power gumbel of maximum value, power gumbel of minimum value and revers
 power gumbel of maximum value.
 }
 \author{
-Susan A. C. Anyosa <susanaliciach@gmail.com>
+Susan A. C. Anyosa susanaliciach@gmail.com
 
-Jorge L. Bazán <jlbazan@icmc.usp.br>
+Jorge L. Bazán jlbazan@icmc.usp.br
 }

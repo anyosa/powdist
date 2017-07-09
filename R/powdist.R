@@ -13,6 +13,6 @@
 #' reversal power gumbel of maximum value, power gumbel of minimum value and reversal
 #' power gumbel of maximum value.
 #'
-#' @author Susan A. C. Anyosa <susanaliciach@gmail.com>
-#' @author Jorge L. Bazán <jlbazan@icmc.usp.br>
+#' @author Susan A. C. Anyosa susanaliciach@gmail.com
+#' @author Jorge L. Bazán jlbazan@icmc.usp.br
 NULL
