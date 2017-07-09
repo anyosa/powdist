@@ -1,7 +1,7 @@
 Package: powdist
 Type: Package
 Title: Power and reversal power distributions
-Version: 0.1.1
+Version: 0.1.2
 Author: Susan A. C. Anyosa
 Maintainer: Susan A. C. Anyosa <susanch@usp.br>
 URL: https://github.com/susanca/powdist
