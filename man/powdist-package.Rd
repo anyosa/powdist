@@ -8,8 +8,8 @@
 \description{
 The \pkg{powdist} package enables to compute the probability density function,
 cumulative distribution function, quantile function and generate random numbers for
-the following distributions: power logistic, reversal power logistic, power normal,
-reversal power normal, power cauchy, reversal power cauchy, power gumbel of maximum value,
-reversal power gumbel of maximum value, power gumbel of minimum value and reversal
-power gumbel of maximum value.
+the following distributions: power logistic (pl), reversal power logistic (rpl),
+power normal (pn), reversal power normal (rpn), power cauchy (pc), reversal power cauchy (rpc),
+power gumbel of maximum value (pgmav), reversal power gumbel of maximum value (rpgmav),
+power gumbel of minimum value (pgmiv) and reversal power gumbel of minimum value (rpgmiv).
 }
