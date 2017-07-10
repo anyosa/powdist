@@ -7,6 +7,7 @@
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' drpl(1, 1, 3, 4)
+#' @export
 drpl <- function(x, lambda, mu = 0, sigma = 1){
   d = (lambda/sigma) * dlogis((x-mu)/sigma) * (plogis((-x-mu)/sigma)**(lambda-1))
   return(d)
@@ -21,6 +22,7 @@ drpl <- function(x, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' prpl(1, 1, 3, 4)
+#' @export
 prpl <- function(q, lambda, mu = 0, sigma = 1){
   p = plogis(-q, mu, sigma)
   return(1-p**lambda)
@@ -35,6 +37,7 @@ prpl <- function(q, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' qrpl(0.2, 1, 3, 4)
+#' @export
 qrpl <- function(p, lambda, mu = 0, sigma = 1){
   q = -qlogis((1-p)**(1/lambda))* sigma + mu
   return(q)
@@ -49,6 +52,7 @@ qrpl <- function(p, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' rrpl(5, 2, 3, 4)
+#' @export
 rrpl = function(n, lambda, mu= 0, sigma = 1){
   n = runif(n)
   x = qrpl(n, lambda, mu, sigma)

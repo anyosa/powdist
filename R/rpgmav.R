@@ -7,6 +7,7 @@
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' drpgmav(1, 1, 3, 4)
+#' @export
 drpgmav <- function(x, lambda, mu = 0, sigma = 1){
   d = (lambda/sigma) * dgumbel((x-mu)/sigma) * ( pgumbel((-x-mu)/sigma) **(lambda-1))
   return(d)
@@ -21,6 +22,7 @@ drpgmav <- function(x, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' prpgmav(1, 1, 3, 4)
+#' @export
 prpgmav <- function(q, lambda, mu = 0, sigma = 1){
   p = pgumbel(-q, mu, sigma)
   return(1-p**lambda)
@@ -35,6 +37,7 @@ prpgmav <- function(q, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' qrpgmav(0.2, 1, 3, 4)
+#' @export
 qrpgmav <- function(p, lambda, mu = 0, sigma = 1){
   q = -qgumbel((1-p)**(1/lambda))* sigma + mu
   return(q)
@@ -49,6 +52,7 @@ qrpgmav <- function(p, lambda, mu = 0, sigma = 1){
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
 #' @examples
 #' rrpgmav(5, 2, 3, 4)
+#' @export
 rrpgmav = function(n, lambda, mu= 0, sigma = 1){
   n = runif(n)
   x = qrpgmav(n, lambda, mu, sigma)
