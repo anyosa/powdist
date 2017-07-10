@@ -14,7 +14,7 @@ ppl(q, lambda, mu = 0, sigma = 1)
 \item{mu, sigma}{location and scale parameters.}
 }
 \description{
-Power logistic distribution
+Distribution function for the power logistic distribution with parameters mu, sigma and lambda.
 }
 \examples{
 ppl(1, 1, 3, 4)
