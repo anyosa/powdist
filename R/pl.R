@@ -1,6 +1,9 @@
 #' Power logistic distribution
 #'
 #' Density function for the power logistic distribution with parameters mu, sigma and lambda.
+#'
+#' @export
+#'
 #' @param x vector of quantiles.
 #' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
@@ -13,6 +16,8 @@ dpl <- function(x, lambda, mu = 0, sigma = 1){
 }
 
 #' Power logistic distribution
+#'
+#' @export
 #'
 #' Distribution function for the power logistic distribution with parameters mu, sigma and lambda.
 #' @param q vector of quantiles.
