@@ -1,24 +1,33 @@
-#' Power and reversal power distributions
+#' Power logistic distribution
 #'
 #' @docType package
-#' @name powdist-package
+#' @name powdist-pl
 #' @aliases ppl
+#' @aliases dpl
+#' @aliases dpl
 #' @aliases dpl
 #'
 #' @description
 #'
 #' Density, distribution function, quantile function and random generation
-#' for the normal distribution with mean equal to mean and standard deviation
-#' equal to sd.
-#' @usage dnorm(x, mean = 0, sd = 1, log = FALSE)
-#' @usage pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
-#' @usage qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
-#' @usage rnorm(n, mean = 0, sd = 1)
+#' for the power logistic distribution with parameters mu, sigma and lambda.
+#'
+#' @usage dpl(x, lambda, mu = 0, sigma = 1)
+#' @usage ppl(q, lambda, mu = 0, sigma = 1)
+#' @usage qpl(p, lambda,  mu = 0, sigma = 1)
+#' @usage rpl(n, lambda, mu= 0, sigma = 1)
+#'
 #' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
+#' @param n number of observations. If length(n) > 1, the length is taken to be the number required.
 #' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
+#'
 #' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. Applied Stochastic Models in Business and Industry, 33(1), 22-34.
+#'
 #' @examples
 #' dpl(1, 1, 3, 4)
+#' ppl(1, 1, 3, 4)
+#' qpl(0.2, 1, 3, 4)
+#' rpl(5, 2, 3, 4)
 NULL
