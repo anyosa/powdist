@@ -7,11 +7,13 @@
 dpl(x, lambda, mu = 0, sigma = 1)
 }
 \arguments{
-\item{x}{vector of quantiles.}
+\item{x, q}{vector of quantiles.}
 
 \item{lambda}{shape parameter.}
 
 \item{mu, sigma}{location and scale parameters.}
+
+\item{p}{vector of probabilities.}
 }
 \description{
 Density function for the power logistic distribution with parameters mu, sigma and lambda.
