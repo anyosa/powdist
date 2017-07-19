@@ -2,10 +2,10 @@
 #'
 #' @docType package
 #' @name powdist-pl
+#' @aliases dpl
 #' @aliases ppl
-#' @aliases dpl
-#' @aliases dpl
-#' @aliases dpl
+#' @aliases qpl
+#' @aliases rpl
 #'
 #' @description
 #'
@@ -13,7 +13,7 @@
 #' for the power logistic distribution with parameters mu, sigma and lambda.
 #'
 #' @usage dpl(x, lambda, mu = 0, sigma = 1)
-#' @usage ppl(q, lambda, mu = 0, sigma = 1)
+#' ppl(q, lambda, mu = 0, sigma = 1)
 #' @usage qpl(p, lambda,  mu = 0, sigma = 1)
 #' @usage rpl(n, lambda, mu= 0, sigma = 1)
 #'

@@ -3,11 +3,12 @@
 \docType{package}
 \name{powdist-pl}
 \alias{powdist-pl}
-\alias{ppl}
+\alias{dpl}
 \alias{powdist-pl-package}
 \title{Power logistic distribution}
 \usage{
 dpl(x, lambda, mu = 0, sigma = 1)
+ppl(q, lambda, mu = 0, sigma = 1)
 }
 \arguments{
 \item{x, q}{vector of quantiles.}
