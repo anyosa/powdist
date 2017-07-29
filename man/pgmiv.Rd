@@ -9,7 +9,7 @@
 \alias{qpgmiv}
 \alias{pgmiv}
 \alias{rpgmiv}
-\title{The Power Gumbel of Maximum Value Distribution}
+\title{The Power Gumbel of Minimum Value Distribution}
 \usage{
 dpgmiv(x, lambda, mu = 0, sigma = 1)
 
@@ -33,7 +33,7 @@ rpgmiv(n, lambda, mu = 0, sigma = 1)
 \description{
 Density, distribution function,
 quantile function and random generation for
-the power Gumbel of maximum value distribution with parameters mu, sigma and lambda.
+the power Gumbel of minimum value distribution with parameters mu, sigma and lambda.
 }
 \examples{
 dpgmiv(1, 1, 3, 4)

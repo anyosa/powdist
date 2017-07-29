@@ -1,8 +1,8 @@
-#' @title The Power Gumbel of Maximum Value Distribution
+#' @title The Power Gumbel of Minimum Value Distribution
 #' @name pgmiv
 #' @description Density, distribution function,
 #' quantile function and random generation for
-#' the power Gumbel of maximum value distribution with parameters mu, sigma and lambda.
+#' the power Gumbel of minimum value distribution with parameters mu, sigma and lambda.
 #' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
 #' @param n number of observations.
