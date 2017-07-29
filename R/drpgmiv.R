@@ -1,4 +1,4 @@
-#' @title The Reversal Power Gumbel of minimum value Distribution
+#' @title The Reversal Power Gumbel of Minimum Value Distribution
 #' @name revpgmiv
 #' @description Density, distribution function,
 #' quantile function and random generation for

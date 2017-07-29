@@ -1,4 +1,4 @@
-#' @title The Reversal Power Gumbel of maximum value Distribution
+#' @title The Reversal Power Gumbel of Maximum Value Distribution
 #' @name revpgmav
 #' @description Density, distribution function,
 #' quantile function and random generation for

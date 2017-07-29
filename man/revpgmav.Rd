@@ -10,7 +10,7 @@
 \alias{qrpgmav}
 \alias{revpgmav}
 \alias{rrpgmav}
-\title{The Reversal Power Gumbel of maximum value Distribution}
+\title{The Reversal Power Gumbel of Maximum Value Distribution}
 \usage{
 drpgmav(x, lambda, mu = 0, sigma = 1)
 

@@ -9,7 +9,7 @@
 \alias{qpgmav}
 \alias{pgmav}
 \alias{rpgmav}
-\title{The Power Gumbel of maximum value Distribution}
+\title{The Power Gumbel of Maximum Value Distribution}
 \usage{
 dpgmav(x, lambda, mu = 0, sigma = 1)
 

@@ -1,4 +1,4 @@
-#' @title The Power Gumbel of maximum value Distribution
+#' @title The Power Gumbel of Maximum Value Distribution
 #' @name pgmav
 #' @description Density, distribution function,
 #' quantile function and random generation for

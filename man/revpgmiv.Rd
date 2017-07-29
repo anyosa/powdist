@@ -10,7 +10,7 @@
 \alias{qrpgmiv}
 \alias{revpgmiv}
 \alias{rrpgmiv}
-\title{The Reversal Power Gumbel of minimum value Distribution}
+\title{The Reversal Power Gumbel of Minimum Value Distribution}
 \usage{
 drpgmiv(x, lambda, mu = 0, sigma = 1)
 
