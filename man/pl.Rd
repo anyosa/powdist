@@ -42,7 +42,13 @@ qpl(0.2, 1, 3, 4)
 rpl(5, 2, 3, 4)
 }
 \references{
-Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos.
 
-Anyosa, S. A. C. (2017). \emph{Binary regression using power and reversal power links}. (Master's thesis).
+Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+
+Johnson, N. L., Kotz, S. and Balakrishnan, N. (1995) Continuous Univariate Distributions, volume 1, chapter 16. Wiley, New York.
+
+Nadarajah, S. (2009) The skew logistic distribution. \emph{AStA Advances in Statistical Analysis}, \strong{93}, 187-203.
+
+Prentice, R. L. (1976) A Generalization of the probit and logit methods for dose-response curves. \emph{Biometrika}, \strong{32}, 761-768.
 }

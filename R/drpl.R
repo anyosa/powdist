@@ -8,8 +8,11 @@
 #' @param n number of observations.
 #' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
-#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
-#' @references Anyosa, S. A. C. (2017). \emph{Binary regression using power and reversal power links}. (Master's thesis).
+#' @references Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos.
+#' @references Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+#' @references Johnson, N. L., Kotz, S. and Balakrishnan, N. (1995) Continuous Univariate Distributions, volume 1, chapter 16. Wiley, New York.
+#' @references Nagler J. (1994) Scobit: an alternative estimator to logit and probit. \emph{American Journal Political Science}, \strong{38}(1), 230-255.
+#' @references Prentice, R. L. (1976) A Generalization of the probit and logit methods for dose-response curves. \emph{Biometrika}, \strong{32}, 761-768.
 #' @examples
 #' drpl(1, 1, 3, 4)
 #' @export

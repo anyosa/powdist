@@ -42,7 +42,9 @@ qrpn(0.2, 1, 3, 4)
 rrpn(5, 2, 3, 4)
 }
 \references{
-Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos.
 
-Anyosa, S. A. C. (2017). \emph{Binary regression using power and reversal power links}. (Master's thesis).
+Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+
+Bazán, J. L., Romeo, J. S. and Rodrigues, J. (2014) Bayesian skew-probit regression for binary response data. \emph{Brazilian Journal of Probability and Statistics}. \strong{28}(4), 467–482.
 }

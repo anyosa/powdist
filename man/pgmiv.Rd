@@ -42,7 +42,9 @@ qpgmiv(0.2, 1, 3, 4)
 rpgmiv(5, 2, 3, 4)
 }
 \references{
-Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K., & Louzada, F. (2017). Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+Abanto-Valle, C. A., Bazán, J. L. and Smith, A. C. (2014) \emph{State space mixed models for binary responses with skewed inverse links using JAGS}. Rio de Janeiro, Brazil.
 
-Anyosa, S. A. C. (2017). \emph{Binary regression using power and reversal power links}. (Master's thesis).
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos.
+
+Bazán, J. L., Torres‐Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
 }
