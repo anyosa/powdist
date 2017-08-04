@@ -8,8 +8,8 @@
 #' @param n number of observations.
 #' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
-#' @references Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de S\~{a}o Paulo - Universidade Federal de S\~{a}o Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
-#' @references Baz\'{a}n, J. L., Torres‐Avil\'{e}s, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+#' @references Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de Sao Paulo - Universidade Federal de Sao Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
+#' @references Bazan, J. L., Torres‐Aviles, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
 #' @importFrom stats runif
 #' @importFrom stats dcauchy
 #' @importFrom stats pcauchy

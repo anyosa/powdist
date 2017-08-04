@@ -2,9 +2,9 @@ Package: powdist
 Type: Package
 Title: Power and Reversal Power Distributions
 Version: 0.1.2
-Authors@R: c(person("Susan", "Anyosa", email = "susanaliciach@gmail.com", role = c("aut", "cre")),person("Jorge Luis", "Bazán", role = "ctb"))
+Authors@R: c(person("Susan", "Anyosa", email = "susanaliciach@gmail.com", role = c("aut", "cre")),person("Jorge Luis", "Bazan", role = "ctb"))
 Author: Susan Anyosa [aut, cre],
-  Jorge Luis Bazán [ctb]
+  Jorge Luis Bazan [ctb]
 Maintainer: Susan Anyosa <susanaliciach@gmail.com>
 URL: https://github.com/susanca/powdist
 Imports: VGAM, stats
