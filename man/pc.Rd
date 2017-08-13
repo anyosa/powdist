@@ -11,13 +11,15 @@
 \alias{rpc}
 \title{The Power Cauchy Distribution}
 \usage{
-dpc(x, lambda, mu = 0, sigma = 1)
+dpc(x, lambda = 1, mu = 0, sigma = 1, log = FALSE)
 
-ppc(q, lambda, mu = 0, sigma = 1)
+ppc(q, lambda = 1, mu = 0, sigma = 1, lower.tail = TRUE,
+  log.p = FALSE)
 
-qpc(p, lambda, mu = 0, sigma = 1)
+qpc(p, lambda = 1, mu = 0, sigma = 1, lower.tail = TRUE,
+  log.p = FALSE)
 
-rpc(n, lambda, mu = 0, sigma = 1)
+rpc(n, lambda = 1, mu = 0, sigma = 1)
 }
 \arguments{
 \item{x, q}{vector of quantiles.}
@@ -25,6 +27,10 @@ rpc(n, lambda, mu = 0, sigma = 1)
 \item{lambda}{shape parameter.}
 
 \item{mu, sigma}{location and scale parameters.}
+
+\item{log, log.p}{logical; if TRUE, probabilities p are given as log(p).}
+
+\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \leq x ]}, otherwise, P[X > x].}
 
 \item{p}{vector of probabilities.}
 
