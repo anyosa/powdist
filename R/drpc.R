@@ -17,8 +17,11 @@
 #' @examples
 #' drpc(1, 1, 3, 4)
 #' @export
-drpc <- function(x, lambda, mu = 0, sigma = 1){
+drpc <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
   d = (lambda/sigma) * dcauchy((x-mu)/sigma) * (pcauchy((-x-mu)/sigma)**(lambda-1))
+  if (log == TRUE) {
+    d = log( (lambda/sigma) * dcauchy((x-mu)/sigma) * (pcauchy((-x-mu)/sigma)**(lambda-1)) )
+  }
   return(d)
 }
 

@@ -18,8 +18,11 @@
 #' @examples
 #' dpgmav(1, 1, 3, 4)
 #' @export
-dpgmav <- function(x, lambda, mu = 0, sigma = 1){
+dpgmav <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
   d = (lambda/sigma) * dgumbel((x-mu)/sigma) * ( pgumbel((x-mu)/sigma) **(lambda-1))
+  if (log == TRUE) {
+    d = log( (lambda/sigma) * dgumbel((x-mu)/sigma) * ( pgumbel((x-mu)/sigma) **(lambda-1)) )
+  }
   return(d)
 }
 

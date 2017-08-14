@@ -18,8 +18,10 @@
 #' @examples
 #' dpgmiv(1, 1, 3, 4)
 #' @export
-dpgmiv <- function(x, lambda, mu = 0, sigma = 1){
-  d = (lambda/sigma) * dgumbel((-x-mu)/sigma) * ( (1-pgumbel((-x-mu)/sigma)) **(lambda-1))
+dpgmiv <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
+  d = (lambda/sigma) * dgumbel((-x-mu)/sigma) * ( (1-pgumbel((-x-mu)/sigma)) **(lambda-1) )
+  if (log == TRUE) {
+    d = log( (lambda/sigma) * dgumbel((-x-mu)/sigma) * ( (1-pgumbel((-x-mu)/sigma)) **(lambda-1) ) )
+  }
   return(d)
 }
-

@@ -18,8 +18,11 @@
 #' @examples
 #' drpn(1, 1, 3, 4)
 #' @export
-drpn <- function(x, lambda, mu = 0, sigma = 1){
+drpn <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
   d = (lambda/sigma) * dnorm((x-mu)/sigma) * (pnorm((-x-mu)/sigma)**(lambda-1))
+  if (log == TRUE) {
+    d = log( (lambda/sigma) * dnorm((x-mu)/sigma) * (pnorm((-x-mu)/sigma)**(lambda-1)) )
+  }
   return(d)
 }
 

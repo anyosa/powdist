@@ -20,8 +20,11 @@
 #' @examples
 #' drpl(1, 1, 3, 4)
 #' @export
-drpl <- function(x, lambda, mu = 0, sigma = 1){
+drpl <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
   d = (lambda/sigma) * dlogis((x-mu)/sigma) * (plogis((-x-mu)/sigma)**(lambda-1))
+  if (log == TRUE) {
+    d = log( (lambda/sigma) * dlogis((x-mu)/sigma) * (plogis((-x-mu)/sigma)**(lambda-1)) )
+  }
   return(d)
 }
 
