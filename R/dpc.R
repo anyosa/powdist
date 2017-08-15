@@ -16,6 +16,12 @@
 #' @importFrom stats dcauchy
 #' @importFrom stats pcauchy
 #' @importFrom stats qcauchy
+#' @details The power Cauchy distribution has density
+#'
+#' \eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{1}{\pi\left(1+\left(\frac{x-\mu}{\sigma}\right)^{2}\right)}\right]\left[\frac{1}{\pi}\arctan\left(\left(\frac{x-\mu}{\sigma}\right)\right)+\frac{1}{2}\right]^{\lambda-1}}
+#'
+#' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^{2}>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+#'
 #' @examples
 #' dpc(1, 1, 3, 4)
 #' @export
