@@ -30,7 +30,7 @@ rpl(n, lambda = 1, mu = 0, sigma = 1)
 
 \item{log, log.p}{logical; if TRUE, probabilities p are given as log(p).}
 
-\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \leq x ]}, otherwise, P[X > x].}
+\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \le x ]}, otherwise, P[X > x].}
 
 \item{p}{vector of probabilities.}
 
@@ -44,9 +44,9 @@ the power logistic distribution with parameters mu, sigma and lambda.
 \details{
 The power Logistic distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)}}{\left(1+e^{-\left(\frac{x-\mu}{\sigma}\right)}\right)^{2}}\right]\left[\frac{e^{\left(\frac{x-\mu}{\sigma}\right)}}{1+e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}
+\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)}}{\left(1+e^{-\left(\frac{x-\mu}{\sigma}\right)}\right)^{2}}\right]\left[\frac{e^{\left(\frac{x-\mu}{\sigma}\right)}}{1+e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma)/(1+exp(-(x-\mu)/\sigma)))^2][exp((x-\mu)/\sigma)/(1+exp((x-\mu)/\sigma)]^(\lambda-1)},
 
-where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^{2}>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
 \examples{
 dpl(1, 1, 3, 4)
