@@ -30,7 +30,7 @@ rpc(n, lambda = 1, mu = 0, sigma = 1)
 
 \item{log, log.p}{logical; if TRUE, probabilities p are given as log(p).}
 
-\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \leq x ]}, otherwise, P[X > x].}
+\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \le x ]}, otherwise, P[X > x].}
 
 \item{p}{vector of probabilities.}
 
@@ -44,9 +44,10 @@ the power Cauchy distribution with parameters mu, sigma and lambda.
 \details{
 The power Cauchy distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{1}{\pi\left(1+\left(\frac{x-\mu}{\sigma}\right)^{2}\right)}\right]\left[\frac{1}{\pi}\arctan\left(\left(\frac{x-\mu}{\sigma}\right)\right)+\frac{1}{2}\right]^{\lambda-1}}{lambda/sigma},
+\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{1}{\pi\left(1+\left(\frac{x-\mu}{\sigma}\right)^{2}\right)}\right]\left[\frac{1}{\pi}\arctan\left(\left(\frac{x-\mu}{\sigma}\right)\right)+\frac{1}{2}\right]^{\lambda-1}}
+{f(x)=(\lambda/\sigma)(1/\Pi(1+((x-\mu)/\sigma)))},
 
-where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^{2}>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
 \examples{
 dpc(1, 1, 3, 4)
