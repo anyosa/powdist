@@ -30,7 +30,7 @@ rpn(n, lambda = 1, mu = 0, sigma = 1)
 
 \item{log, log.p}{logical; if TRUE, probabilities p are given as log(p).}
 
-\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \leq x ]}, otherwise, P[X > x].}
+\item{lower.tail}{logical; if TRUE (default), probabilities are \eqn{P[X \le x ]}, otherwise, P[X > x].}
 
 \item{p}{vector of probabilities.}
 
@@ -44,9 +44,9 @@ the power normal distribution with parameters mu, sigma and lambda.
 \details{
 The power Normal distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sqrt{2\pi}}\right]\left[\Phi\left(\left(\frac{x-\mu}{\sigma}\right)\right)\right]^{\lambda-1}}
+\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sqrt{2\pi}}\right]\left[\Phi\left(\left(\frac{x-\mu}{\sigma}\right)\right)\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-((x-\mu)/\sigma)^2)/\sqrt(2\pi)][\Phi((x-\mu)/\sigma)]^(\lambda-1)},
 
-where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^{2}>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
 \examples{
 dpn(1, 1, 3, 4)
