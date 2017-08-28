@@ -1,4 +1,4 @@
-#' @name pt
+#' @name PowerT
 #' @examples
 #' qpt(0.2, 1, 3, 4, 1)
 #' @export

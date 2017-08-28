@@ -1,4 +1,4 @@
-#' @name plaplace
+#' @name PowerLaplace
 #' @examples
 #' qplaplace(0.2, 1, 3, 4)
 #' @export

@@ -1,8 +1,8 @@
-#' @title The Reversal Power Gumbel of Minimum Value Distribution
-#' @name revpgmiv
+#' @title The Reversal Power Normal Distribution
+#' @name ReversalPowerNormal
 #' @description Density, distribution function,
 #' quantile function and random generation for
-#' the reversal power Gumbel of minimum value distribution with parameters mu, sigma and lambda.
+#' the reversal power normal distribution with parameters mu, sigma and lambda.
 #' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
 #' @param n number of observations.
@@ -12,23 +12,24 @@
 #' @param lower.tail logical; if TRUE (default), probabilities are \eqn{P[X \le x ]}, otherwise, P[X > x].
 #' @references Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
 #' @references Bazán, J. L., Torres -Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
+#' @references Bazán, J. L., Romeo, J. S. and Rodrigues, J. (2014) Bayesian skew-probit regression for binary response data. \emph{Brazilian Journal of Probability and Statistics}. \strong{28}(4), 467–482.
 #' @importFrom stats runif
-#' @importFrom VGAM dgumbel
-#' @importFrom VGAM pgumbel
-#' @importFrom VGAM qgumbel
-#' @details The reversal power Gumbel of minimum value distribution has density
+#' @importFrom stats dnorm
+#' @importFrom stats pnorm
+#' @importFrom stats qnorm
+#' @details The reversal power Normal distribution has density
 #'
-#' \eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[e^{-\left(-\left(\frac{x-\mu}{\sigma}\right)+e^{\left(\frac{x-\mu}{\sigma}\right)}\right)}\right]\left[1-e^{-e^{-\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp((x-\mu)/\sigma-exp((x-\mu)/\sigma))][1-exp(-exp(-(x-\mu)/\sigma))]^(\lambda-1)},
+#' \eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sqrt{2\pi}}\right]\left[\Phi\left(-\left(\frac{x-\mu}{\sigma}\right)\right)\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-((x-\mu)/\sigma)^2)/\sqrt(2\pi)][\Phi(-(x-\mu)/\sigma)]^(\lambda-1)},
 #'
 #' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 #'
 #' @examples
-#' drpgmiv(1, 1, 3, 4)
+#' drpnorm(1, 1, 3, 4)
 #' @export
-drpgmiv <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
-  d = (lambda/sigma) * dgumbel((-x+mu)/sigma) * ( (1-pgumbel((x-mu)/sigma)) **(lambda-1))
+drpnorm <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
+  d = (lambda/sigma) * dnorm((x-mu)/sigma) * (pnorm((-x+mu)/sigma)**(lambda-1))
   if (log == TRUE) {
-    d = log( (lambda/sigma) * dgumbel((-x+mu)/sigma) * ( (1-pgumbel((x-mu)/sigma)) **(lambda-1)) )
+    d = log( (lambda/sigma) * dnorm((x-mu)/sigma) * (pnorm((-x+mu)/sigma)**(lambda-1)) )
   }
   return(d)
 }

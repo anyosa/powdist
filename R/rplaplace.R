@@ -1,4 +1,4 @@
-#' @name plaplace
+#' @name PowerLaplace
 #' @examples
 #' rplaplace(5, 2, 3, 4)
 #' @export

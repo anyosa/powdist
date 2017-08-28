@@ -1,5 +1,5 @@
 #' @title The Power Laplace Distribution
-#' @name plaplace
+#' @name PowerLaplace
 #' @description Density, distribution function,
 #' quantile function and random generation for
 #' the power Laplace distribution with parameters mu, sigma and lambda.

@@ -1,4 +1,4 @@
-#' @name pt
+#' @name PowerT
 #' @examples
 #' ppt(1, 1, 3, 4, 1)
 #' @export
