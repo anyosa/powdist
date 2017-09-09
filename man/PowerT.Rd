@@ -56,3 +56,6 @@ ppt(1, 1, 3, 4, 1)
 qpt(0.2, 1, 3, 4, 1)
 rpt(5, 2, 3, 4, 1)
 }
+\references{
+Lemonte A. and Bazán J.L.
+}

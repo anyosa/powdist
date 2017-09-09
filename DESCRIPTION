@@ -7,8 +7,7 @@ Author: Susan Anyosa [aut, cre],
   Jorge Luis Bazán Guzmán [aut],
   Artur Lemonte [aut]
 Maintainer: Susan Anyosa <susanaliciach@gmail.com>
-URL: https://github.com/susanca/powdist
-Imports: VGAM, stats, rmutil
+Imports: stats, rmutil, gamlss.dist, normalp
 Depends: R (>= 3.1.0)
 Description: Density, distribution function, quantile function and random generation for the family of power and reversal power distributions.
 License: GPL-3
