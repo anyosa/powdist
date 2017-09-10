@@ -1,4 +1,4 @@
-#' @name ReversalPowerGumbel2
+#' @name ReversalPowerGumbel
 #' @examples
 #' qrpGU(0.2, 1, 3, 4)
 #' @export

@@ -1,5 +1,5 @@
 #' @title The Reversal Power Gumbel of Minimum Value Distribution
-#' @name ReversalPowerGumbel2
+#' @name ReversalPowerGumbel
 #' @description Density, distribution function,
 #' quantile function and random generation for
 #' the reversal power Gumbel of minimum value distribution with parameters mu, sigma and lambda.

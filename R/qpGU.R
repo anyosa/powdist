@@ -1,4 +1,4 @@
-#' @name PowerGumbel2
+#' @name PowerGumbel
 #' @examples
 #' qpGU(0.2, 1, 3, 4)
 #' @export

@@ -1,5 +1,5 @@
 #' @title The Power Gumbel of Minimum Value Distribution
-#' @name PowerGumbel2
+#' @name PowerGumbel
 #' @description Density, distribution function,
 #' quantile function and random generation for
 #' the power Gumbel of minimum value distribution with parameters mu, sigma and lambda.

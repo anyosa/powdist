@@ -1,4 +1,4 @@
-#' @name PowerGumbel2
+#' @name PowerGumbel
 #' @examples
 #' rpGU(5, 2, 3, 4)
 #' @export
