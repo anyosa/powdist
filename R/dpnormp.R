@@ -15,7 +15,7 @@
 #' @importFrom normalp dnormp
 #' @importFrom normalp pnormp
 #' @importFrom normalp qnormp
-#' @details The power Logistic distribution has density
+#' @details The power power Exponential distribution has density
 #'
 #' \eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)}}{\left(1+e^{-\left(\frac{x-\mu}{\sigma}\right)}\right)^{2}}\right]\left[\frac{e^{\left(\frac{x-\mu}{\sigma}\right)}}{1+e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma)/(1+exp(-(x-\mu)/\sigma)))^2][exp((x-\mu)/\sigma)/(1+exp((x-\mu)/\sigma)]^(\lambda-1)},
 #'
