@@ -45,7 +45,7 @@ the power Cauchy distribution with parameters mu, sigma and lambda.
 \details{
 The power Cauchy distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{1}{\pi\left(1+\left(\frac{x-\mu}{\sigma}\right)^{2}\right)}\right]\left[\frac{1}{\pi}\arctan\left(\left(\frac{x-\mu}{\sigma}\right)\right)+\frac{1}{2}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][1/(\pi(1+(x-\mu)/\sigma))][(1/\pi)arctan((x-\mu)/\sigma)+(1/2)]^(\lambda-1)},
+\eqn{f(x)=\lambda\left [\frac{1}{\pi}\arctan\left ( \frac{x-\mu}{\sigma} \right )+\frac{1}{2}  \right ]^{\lambda -1} \left[ \frac{1}{\pi\sigma\left( 1+\left (\frac{x-\mu}{\sigma} \right )^{2} \right)} \right]}{f(x)=[\lambda/\sigma][1/(\pi(1+(x-\mu)/\sigma))][(1/\pi)arctan((x-\mu)/\sigma)+(1/2)]^(\lambda-1)},
 
 where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
@@ -56,7 +56,7 @@ qpcauchy(0.2, 1, 3, 4)
 rpcauchy(5, 2, 3, 4)
 }
 \references{
-Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{https://repositorio.ufscar.br/handle/ufscar/9016}.
 
 Bazán, J. L., Torres -Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
 }
