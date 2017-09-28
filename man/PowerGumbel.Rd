@@ -44,7 +44,7 @@ the power Gumbel of minimum value distribution with parameters mu, sigma and lam
 \details{
 The power Gumbel of minimum value distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[e^{-\left(\left(\frac{x-\mu}{\sigma}\right)+e^{-\left(\frac{x-\mu}{\sigma}\right)}\right)}\right]\left[e^{-e^{-\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))][exp(-exp(-(x-\mu)/\sigma))]^(\lambda-1)},
+\eqn{f(x)=\lambda \left[1-e^{-e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}\left[\frac{1}{\sigma}e^{\left(\frac{x-\mu}{\sigma}\right)-e^{\left(\frac{x-\mu}{\sigma}\right)}} \right]}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))][exp(-exp(-(x-\mu)/\sigma))]^(\lambda-1)},
 
 where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
@@ -57,7 +57,7 @@ rpGU(5, 2, 3, 4)
 \references{
 Abanto -Valle, C. A., Bazán, J. L. and Smith, A. C. (2014) \emph{State space mixed models for binary responses with skewed inverse links using JAGS}. Rio de Janeiro, Brazil.
 
-Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{https://repositorio.ufscar.br/handle/ufscar/9016}.
 
 Bazán, J. L., Torres -Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
 }
