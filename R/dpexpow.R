@@ -1,8 +1,8 @@
-#' @title The Power Power Exponential Distribution
-#' @name PowerPowerExponential
+#' @title The Power Exponential Power Distribution
+#' @name PowerExponentialPower
 #' @description Density, distribution function,
 #' quantile function and random generation for
-#' the power power exponential distribution with parameters mu, sigma, lambda and k.
+#' the power exponential power distribution with parameters mu, sigma, lambda and k.
 #' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
 #' @param n number of observations.
@@ -22,9 +22,9 @@
 #' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 #'
 #' @examples
-#' dpnormp(1, 1, 3, 4, 1)
+#' dpexpow(1, 1, 3, 4, 1)
 #' @export
-dpnormp <- function(x, lambda = 1, mu = 0, sigma = 1, k = 0, log = FALSE){
+dpexpow <- function(x, lambda = 1, mu = 0, sigma = 1, k = 0, log = FALSE){
   d = (lambda/sigma) * dnormp( ((x-mu)/sigma), p = (2/(k+1)) ) * (pnormp( ((x-mu)/sigma), p = (2/(k+1)) )**(lambda-1))
   if (log == TRUE) {
     d = log( (lambda/sigma) * dnormp( ((x-mu)/sigma), p = (2/(k+1)) ) * (pnormp( ((x-mu)/sigma), p = (2/(k+1)) )**(lambda-1)) )

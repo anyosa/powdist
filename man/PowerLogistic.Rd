@@ -61,6 +61,8 @@ Bazán, J. L., Torres -Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power a
 
 Johnson, N. L., Kotz, S. and Balakrishnan, N. (1995) Continuous Univariate Distributions, volume 1, chapter 16. Wiley, New York.
 
+Lemonte, A. J. and Bazán, J. L. (2017) New links for binary regression: an application to coca cultivation in Peru. \emph{TEST}.
+
 Nadarajah, S. (2009) The skew logistic distribution. \emph{AStA Advances in Statistical Analysis}, \strong{93}, 187-203.
 
 Prentice, R. L. (1976) A Generalization of the probit and logit methods for dose-response curves. \emph{Biometrika}, \strong{32}, 761-768.

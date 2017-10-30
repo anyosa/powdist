@@ -44,7 +44,7 @@ the power normal distribution with parameters mu, sigma and lambda.
 \details{
 The power Normal distribution has density
 
-\eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sqrt{2\pi}}\right]\left[\Phi\left(\left(\frac{x-\mu}{\sigma}\right)\right)\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-((x-\mu)/\sigma)^2)/\sqrt(2\pi)][\Phi((x-\mu)/\sigma)]^(\lambda-1)},
+\eqn{f(x)=\lambda \left [ \Phi \left ( \frac{x-\mu}{\sigma} \right ) \right]^{\lambda - 1} \left[\frac{e^{ -\frac{1}{2}\left ( \frac{x-\mu}{\sigma} \right )^2}}{\sigma\sqrt{2\pi}} \right]}{f(x)=[\lambda/\sigma][exp(-((x-\mu)/\sigma)^2)/\sqrt(2\pi)][\Phi((x-\mu)/\sigma)]^(\lambda-1)},
 
 where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 }
@@ -55,7 +55,7 @@ qpnorm(0.2, 1, 3, 4)
 rpnorm(5, 2, 3, 4)
 }
 \references{
-Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{http://conteudo.icmc.usp.br/pessoas/jlbazan/download/thesis.pdf}.
+Anyosa, S. A. C. (2017) \emph{Binary regression using power and reversal power links}. Master's thesis in Portuguese. Interinstitutional Graduate Program in Statistics. Universidade de São Paulo - Universidade Federal de São Carlos. Available in \url{https://repositorio.ufscar.br/handle/ufscar/9016}.
 
 Bazán, J. L., Torres -Avilés, F., Suzuki, A. K. and Louzada, F. (2017) Power and reversal power links for binary regressions: An application for motor insurance policyholders. \emph{Applied Stochastic Models in Business and Industry}, \strong{33}(1), 22-34.
 

@@ -1,8 +1,8 @@
-#' @name PowerGumbel
+#' @name PowerReversalGumbel
 #' @examples
-#' qpGU(0.2, 1, 3, 4)
+#' qprgumbel(0.2, 1, 3, 4)
 #' @export
-qpGU <- function(p, lambda = 1, mu = 0, sigma = 1, lower.tail = TRUE, log.p = FALSE){
+qprgumbel <- function(p, lambda = 1, mu = 0, sigma = 1, lower.tail = TRUE, log.p = FALSE){
   if (lower.tail == TRUE & log.p == FALSE) {
     q = qGU(p**(1/lambda))* sigma + mu
   } else if (lower.tail == FALSE & log.p == FALSE) {

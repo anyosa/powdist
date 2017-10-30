@@ -16,8 +16,7 @@
 #' @importFrom rmutil qlaplace
 #' @details The power Laplace distribution has density
 #'
-#' \eqn{f(x)=[\lambda/\sigma][f((x-\mu)/\sigma)][F((x-\mu)/\sigma)] ^(\lambda-1)},
-#'
+#' \eqn{f(x)=\lambda\left[\frac{1}{2}+\frac{\left(1-e^{-\frac{\left|x-\mu\right|}{\sigma}}\right)}{2}\textrm{sign}\left(\frac{x-\mu}{\sigma}\right)\right]^{\lambda-1}\left[\frac{e^{-\frac{\left|x-\mu\right|}{\sigma}}}{2\sigma}\right]}{b},
 #' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
 #'
 #' @examples
