@@ -17,7 +17,7 @@
 #' @importFrom gamlss.dist dGU
 #' @importFrom gamlss.dist pGU
 #' @importFrom gamlss.dist qGU
-#' @details The power Gumbel of minimum value distribution has density
+#' @details The power reverlsa-Gumbel distribution has density
 #'
 #' \eqn{f(x)=\lambda \left[1-e^{-e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}\left[\frac{1}{\sigma}e^{\left(\frac{x-\mu}{\sigma}\right)-e^{\left(\frac{x-\mu}{\sigma}\right)}} \right]}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))][exp(-exp(-(x-\mu)/\sigma))]^(\lambda-1)},
 #'

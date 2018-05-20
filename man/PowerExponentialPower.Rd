@@ -43,11 +43,11 @@ quantile function and random generation for
 the power exponential power distribution with parameters mu, sigma, lambda and k.
 }
 \details{
-The power power Exponential distribution has density
+The power exponential power distribution has density
 
 \eqn{f\left(x\right)=\frac{\lambda}{\sigma}\left[\frac{e^{-\left(\frac{x-\mu}{\sigma}\right)}}{\left(1+e^{-\left(\frac{x-\mu}{\sigma}\right)}\right)^{2}}\right]\left[\frac{e^{\left(\frac{x-\mu}{\sigma}\right)}}{1+e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma)/(1+exp(-(x-\mu)/\sigma)))^2][exp((x-\mu)/\sigma)/(1+exp((x-\mu)/\sigma)]^(\lambda-1)},
 
-where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} and k the shape parameters.
 }
 \examples{
 dpexpow(1, 1, 3, 4, 1)

@@ -14,11 +14,11 @@
 #' @importFrom normalp dnormp
 #' @importFrom normalp pnormp
 #' @importFrom normalp qnormp
-#' @details The reversal power power Exponential distribution has density
+#' @details The reversal power exponential power distribution has density
 #'
 #' \eqn{f(x)=[\lambda/\sigma][f((x-\mu)/\sigma)][F((x-\mu)/\sigma)] ^(\lambda-1)},
 #'
-#' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+#' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} and k the shape parameters.
 #'
 #' @examples
 #' drpexpow(1, 1, 3, 4, 1)

@@ -43,7 +43,7 @@ quantile function and random generation for
 the reversal power reversal-Gumbel distribution with parameters mu, sigma and lambda.
 }
 \details{
-The reversal power Gumbel of minimum value distribution has density
+The reversal power reversal-Gumbel distribution has density
 
 \eqn{f(x)=\lambda \left[1-e^{-e^{\left(-\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}\left[\frac{1}{\sigma}e^{\left(\frac{x-\mu}{\sigma}\right)-e^{\left(\frac{x-\mu}{\sigma}\right)}} \right]}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))][exp(-exp((x-\mu)/\sigma))]^(\lambda-1)},
 

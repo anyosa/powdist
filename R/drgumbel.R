@@ -1,12 +1,11 @@
-#' @title The Reversal Power Reversal-Gumbel Distribution
-#' @name ReversalPowerReversalGumbel
+#' @title The Reversal-Gumbel Distribution
+#' @name ReversalGumbel
 #' @description Density, distribution function,
 #' quantile function and random generation for
-#' the reversal power reversal-Gumbel distribution with parameters mu, sigma and lambda.
+#' the Reversal-Gumbel distribution with parameters mu and sigma.
 #' @param x,q vector of quantiles.
 #' @param p vector of probabilities.
 #' @param n number of observations.
-#' @param lambda shape parameter.
 #' @param mu,sigma location and scale parameters.
 #' @param log,log.p logical; if TRUE, probabilities p are given as log(p).
 #' @param lower.tail logical; if TRUE (default), probabilities are \eqn{P[X \le x ]}, otherwise, P[X > x].
@@ -16,19 +15,19 @@
 #' @importFrom gamlss.dist dGU
 #' @importFrom gamlss.dist pGU
 #' @importFrom gamlss.dist qGU
-#' @details The reversal power reversal-Gumbel distribution has density
+#' @details The reversal-Gumbel distribution has density
 #'
-#' \eqn{f(x)=\lambda \left[1-e^{-e^{\left(-\frac{x-\mu}{\sigma}\right)}}\right]^{\lambda-1}\left[\frac{1}{\sigma}e^{\left(\frac{x-\mu}{\sigma}\right)-e^{\left(\frac{x-\mu}{\sigma}\right)}} \right]}{f(x)=[\lambda/\sigma][exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))][exp(-exp((x-\mu)/\sigma))]^(\lambda-1)},
+#' \eqn{f(x)=\left[\frac{1}{\sigma}e^{\left(\frac{x-\mu}{\sigma}\right)-e^{\left(\frac{x-\mu}{\sigma}\right)}}\right]}{f(x)=exp(-(x-\mu)/\sigma-exp(-(x-\mu)/\sigma))},
 #'
-#' where \eqn{-\infty<\mu<\infty} is the location paramether, \eqn{\sigma^2>0} the scale parameter and \eqn{\lambda>0} the shape parameter.
+#' where \eqn{-\infty<\mu<\infty} is the location paramether and \eqn{\sigma^2>0} is the scale parameter.
 #'
 #' @examples
-#' drprgumbel(1, 1, 3, 4)
+#' drgumbel(1, 3, 4)
 #' @export
-drprgumbel <- function(x, lambda = 1, mu = 0, sigma = 1, log = FALSE){
-  d = (lambda/sigma) * dGU((x-mu)/sigma) * ( pGU((-x+mu)/sigma) **(lambda-1))
+drgumbel <- function(x, mu = 0, sigma = 1, log = FALSE){
+  d =  dGU((x-mu)/sigma)
   if (log == TRUE) {
-    d = log( (lambda/sigma) * dGU((x-mu)/sigma) * ( pGU((-x+mu)/sigma) **(lambda-1)) )
+    d = log( dGU((x-mu)/sigma) )
   }
   return(d)
 }
